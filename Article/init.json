@@ -1,0 +1,3 @@
+{"tables":[{"name":"article","fields":[{"name":"title","type":"string"},{"name":"content","type":"string"}]},
+{"name":"comment","fields":[{"name":"article_id","type":"int", "reference":"article"},{"name":"content","type":"string"}, {"name":"created_at","type":"datetime"}, {"name":"created_by", "type":"integer","reference":"users"}]}]
+,"controllers":[{"name":"article","permission":0, "tables": ["article"] }],"page":[{"name":"article","path":"../modules/Article/view/article","routes":["/dev"]}]}
