@@ -19,7 +19,7 @@
                 {
                     "name": "grid_id",
                     "type": "int",
-                    "reference": "article"
+                    "reference": "grid"
                 },
                 {
                     "name": "label",
@@ -41,6 +41,7 @@
             ]
         }
     ],
+
     "controllers": [
         {
             "name": "grid",
