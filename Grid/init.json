@@ -1,55 +1,66 @@
 {
     "tables": [
         {
-            "name": "article",
+            "name": "grid",
             "fields": [
                 {
                     "name": "title",
                     "type": "string"
                 },
                 {
-                    "name": "content",
+                    "name": "description",
                     "type": "string"
                 }
             ]
         },
         {
-            "name": "comment",
+            "name": "gridfield",
             "fields": [
                 {
-                    "name": "article_id",
+                    "name": "grid_id",
                     "type": "int",
                     "reference": "article"
                 },
                 {
-                    "name": "content",
+                    "name": "label",
                     "type": "string"
                 },
                 {
-                    "name": "created_at",
-                    "type": "datetime"
+                    "name": "type",
+                    "type": "string"
                 },
                 {
-                    "name": "created_by",
-                    "type": "integer",
-                    "reference": "users"
+                    "name": "permission",
+                    "type": "integer"
+                },
+                {
+                    "name": "options",
+                    "type": "json"
                 }
+               
             ]
         }
     ],
     "controllers": [
         {
-            "name": "article",
+            "name": "grid",
             "permission": 0,
             "tables": [
-                "article"
+                "grid"
+            ]
+        },
+        {
+            "name": "gridManager",
+            "permission": 50,
+            "tables": [
+                "grid"
             ]
         }
     ],
     "page": [
         {
-            "name": "article",
-            "path": "../modules/Article/view/article",
+            "name": "grid",
+            "path": "../modules/Grid/view/grid",
             "routes": [
                 "/dev"
             ]
