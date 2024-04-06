@@ -4,6 +4,10 @@
             "name": "grid",
             "fields": [
                 {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
                     "name": "title",
                     "type": "string"
                 },
@@ -20,6 +24,7 @@
                     "name": "grid_id",
                     "type": "int",
                     "reference": "grid"
+
                 },
                 {
                     "name": "label",
@@ -59,8 +64,8 @@
     ],
     "page": [
         {
-            "name": "grid",
-            "path": "../modules/Grid/view/grid",
+            "name": "gridManager",
+            "path": "../modules/Grid/view/gridManager",
             "routes": [
                 "/dev"
             ]
